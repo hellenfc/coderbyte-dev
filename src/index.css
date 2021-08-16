@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.git-container{
+  text-align: left;
+  margin: 3em;
+}
+
+.user-button{
+  margin: 10px;
+}

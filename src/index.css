@@ -17,6 +17,29 @@ code {
   margin: 3em;
 }
 
+.back-button{
+    background-color: transparent!important;
+    border-color: transparent!important;
+}
+
 .user-button{
-  margin: 10px;
+  margin: 5px;
+}
+
+.user-detail{
+  display: flex;
+}
+
+img{
+  border-radius: 50%;
+  width: 5em;
+  height: 5em;
+}
+
+.username{
+  font-weight: bold;
+}
+
+.data-container{
+  margin-left: 1em;
 }

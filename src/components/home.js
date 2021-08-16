@@ -45,11 +45,15 @@ const Home = () => {
 
     const renderUserDetail = () => {
         return (
-            <>
+            <div className="user-detail">
                 <img src={userData.avatar_url} loading="lazy" ></img>
-                <p>{userData.name}</p>
-                <p>{userData.location}</p>
-            </>
+                <div className="data-container">
+                    <p className="username">{userData.name}</p>
+                    <p>{userData.location}</p>
+
+                </div>
+
+            </div>
         )
     }
 
@@ -57,11 +61,11 @@ const Home = () => {
         <>
             <Navbar bg="dark" variant="dark">
                 <Container>
-                    <Button  onClick={() => {
+                    {renderDetail && <Button className="back-button" onClick={() => {
                         setRenderDetail(false)
                         setUserData({})
-                        }}>return</Button>
-                    <Navbar.Brand href="#home">
+                    }}>{`< Back`}</Button>}
+                    <Navbar.Brand>
                         Home
                     </Navbar.Brand>
                 </Container>
